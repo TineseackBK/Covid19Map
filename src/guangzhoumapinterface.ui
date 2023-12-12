@@ -1,0 +1,4315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GuangZhouMapInterface</class>
+ <widget class="QDialog" name="GuangZhouMapInterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>疫情地图管理系统</string>
+  </property>
+  <widget class="QStackedWidget" name="stack">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page_gz">
+    <widget class="QLabel" name="UI_map_gz_bg">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1280</width>
+       <height>720</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/GUI/UI_map_gz_bg.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="regionName">
+     <property name="geometry">
+      <rect>
+       <x>970</x>
+       <y>160</y>
+       <width>260</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源宋体 CN Heavy</family>
+       <pointsize>48</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#2284d4;&quot;&gt;广 州 市&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="riskLvl">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>317</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>低风险</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="count_0">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>355</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="count_1">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>391</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="count_2">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>428</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="count_3">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>465</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="temperature">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>574</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>25</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="weather">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>536</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>晴</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="regionName_2">
+     <property name="geometry">
+      <rect>
+       <x>-30</x>
+       <y>644</y>
+       <width>260</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源宋体 CN Heavy</family>
+       <pointsize>28</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(139, 139, 139);
+font-size: 28pt;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; color:#8b8b8b;&quot;&gt;广 州 市&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exitButton">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>153</width>
+       <height>79</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/UI_map_gz_back.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="count_0_edit">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>353</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/edit.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="count_1_edit">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>389</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/edit.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="count_2_edit">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>426</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/edit.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="count_3_edit">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>462</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/edit.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="weather_edit">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>534</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/edit.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="temperature_edit">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>570</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/edit.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="YueXiuButton">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>400</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="HuangPuButton">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>370</y>
+       <width>41</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="LiWanButton">
+     <property name="geometry">
+      <rect>
+       <x>163</x>
+       <y>437</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="HaiZhuButton">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>435</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="PanYuButton">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>474</y>
+       <width>91</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="CongHuaButton">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>160</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="TianHeButton">
+     <property name="geometry">
+      <rect>
+       <x>236</x>
+       <y>390</y>
+       <width>52</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="NanShaButton">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>580</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="HuaDuButton">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>250</y>
+       <width>100</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BaiYunButton">
+     <property name="geometry">
+      <rect>
+       <x>178</x>
+       <y>320</y>
+       <width>85</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ZengChengButton">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>270</y>
+       <width>100</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+    </widget>
+    <zorder>temperature_edit</zorder>
+    <zorder>weather_edit</zorder>
+    <zorder>UI_map_gz_bg</zorder>
+    <zorder>regionName</zorder>
+    <zorder>riskLvl</zorder>
+    <zorder>count_0</zorder>
+    <zorder>count_1</zorder>
+    <zorder>count_2</zorder>
+    <zorder>count_3</zorder>
+    <zorder>temperature</zorder>
+    <zorder>weather</zorder>
+    <zorder>regionName_2</zorder>
+    <zorder>exitButton</zorder>
+    <zorder>count_0_edit</zorder>
+    <zorder>count_1_edit</zorder>
+    <zorder>count_2_edit</zorder>
+    <zorder>count_3_edit</zorder>
+    <zorder>YueXiuButton</zorder>
+    <zorder>HuangPuButton</zorder>
+    <zorder>LiWanButton</zorder>
+    <zorder>HaiZhuButton</zorder>
+    <zorder>PanYuButton</zorder>
+    <zorder>CongHuaButton</zorder>
+    <zorder>TianHeButton</zorder>
+    <zorder>NanShaButton</zorder>
+    <zorder>HuaDuButton</zorder>
+    <zorder>BaiYunButton</zorder>
+    <zorder>ZengChengButton</zorder>
+   </widget>
+   <widget class="QWidget" name="page_region">
+    <widget class="QLabel" name="count_4">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>355</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="count_7_edit">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>462</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/edit.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="returnButton">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>161</width>
+       <height>79</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/UI_map_region_back.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="count_5_edit">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>389</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/edit.png);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="count_4_edit">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>353</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/edit.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="count_5">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>391</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="regionName_3">
+     <property name="geometry">
+      <rect>
+       <x>985</x>
+       <y>160</y>
+       <width>260</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源宋体 CN Heavy</family>
+       <pointsize>48</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#2284d4;&quot;&gt;南 沙 区&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="count_6">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>428</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="temperature_edit_2">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>570</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/edit.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="weather_2">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>536</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>晴</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="count_7">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>465</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="weather_edit_2">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>534</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/edit.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="riskLvl_2">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>317</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>低风险</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="temperature_2">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>574</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Bold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(34, 132, 212);</string>
+     </property>
+     <property name="text">
+      <string>25</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="regionName_4">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>644</y>
+       <width>260</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源宋体 CN Heavy</family>
+       <pointsize>28</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(139, 139, 139);</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#8b8b8b;&quot;&gt;南 沙 区&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="count_6_edit">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>426</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/GUI/edit.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="UI_map_region_bg">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1280</width>
+       <height>720</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/GUI/UI_map_NanSha.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fatherName_2">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>100</y>
+       <width>260</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 CN Heavy</family>
+       <pointsize>18</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(139, 139, 139);</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot;color:#8b8b8b;&quot;&gt;广 州 市&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="street_NanSha" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>325</y>
+       <width>98</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="ns1">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>榄核镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ns2">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>大岗镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ns3">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>东涌镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ns4">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>黄阁镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ns5">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>南沙街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ns6">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>横沥镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ns7">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>珠江街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ns8">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>万顷沙镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ns9">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>龙穴街道</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="street_PanYu" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>185</y>
+       <width>98</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="py1">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>小谷围街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py2">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>洛浦街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py3">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>新造镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py4">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>化龙镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py5">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>大石街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py6">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>南村镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py7">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>石壁街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py8">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>钟村街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py9">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>东环街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py10">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>大龙街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py11">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>石碁镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py12">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>石楼镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py13">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>沙头街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py14">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>市桥街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py15">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>沙湾街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="py16">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>桥南街道</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="street_HaiZhu" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>175</y>
+       <width>98</width>
+       <height>441</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="hz1">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>琶洲街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz2">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>官洲街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz3">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>华洲街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz4">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>江海街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz5">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>赤岗街道 </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz6">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>南洲街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz7">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>新港街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz8">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>凤阳街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz9">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>南石头街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz10">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>昌岗街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz11">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>沙园街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz12">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>江南中街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz13">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>素社街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz14">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>滨江街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz15">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>龙凤街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz16">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>海幢街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hz17">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>南华西街道</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="street_LiWan" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>75</y>
+       <width>98</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="lw1">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>东沙街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw2">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>中南街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw3">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>海龙街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw4">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>东漖街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw5">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>白鹤洞街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw6">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>冲口街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw7">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>茶滘街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw8">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>花地街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw9">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>石围塘街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw10">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>桥中街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw11">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>沙面街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw12">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>岭南街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw13">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>多宝街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw14">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>昌华街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw15">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>华林街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw16">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>逢源街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw17">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>龙津街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw18">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>金花街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw19">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>彩虹街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw20">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>南源街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw21">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>西村街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lw22">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>站前街道</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="street_YueXiu" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>155</y>
+       <width>98</width>
+       <height>461</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="yx1">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>矿泉街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx2">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>流花街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx3">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>登峰街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx4">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>六榕街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx5">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>洪桥街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx6">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>建设街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx7">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>华乐街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx8">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>黄花岗街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx9">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>光塔街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx10">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>北京街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx11">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>大塘街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx12">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>农林街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx13">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>梅花村街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx14">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>人民街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx15">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>珠光街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx16">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>大东街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx17">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>东山街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="yx18">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>白云街道</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="street_TianHe" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>75</y>
+       <width>98</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="th1">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>凤凰街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th2">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>龙洞街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th3">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>元岗街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th4">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>长兴街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th5">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>新塘街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th6">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>兴华街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th7">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>五山街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th8">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>沙东街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th9">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>沙河街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th10">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>林和街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th11">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>天河南街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th12">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>石牌街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th13">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>棠下街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th14">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>天园街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th15">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>车陂街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th16">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>黄村街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th17">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>珠吉街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th18">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>冼村街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th19">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>猎德街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th20">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>员村街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="th21">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>前进街道</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="street_BaiYun" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>89</y>
+       <width>98</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_9">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="by1">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>江高镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by2">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>人和镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by3">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>钟落潭镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by4">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>太和镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by5">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>石门街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by6">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>白云湖街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by7">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>均禾街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by8">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>嘉禾街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by9">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>永平街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by10">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>鹤龙街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by11">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>石井街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by12">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>新市街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by13">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>黄石街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by14">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>云城街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by15">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>金沙街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by16">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>松洲街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by17">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>同德街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by18">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>棠景街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by19">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>三元里街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by20">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>景泰街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by21">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>同和街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="by22">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>京溪街道</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="street_HuangPu" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>158</y>
+       <width>98</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_11">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="hp1">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>九佛街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp2">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>龙湖街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp3">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>新龙镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp4">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>联和街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp5">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>长岭街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp6">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>永和街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp7">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>萝岗街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp8">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>云埔街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp9">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>大沙街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp10">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>鱼珠街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp11">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>长州街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp12">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>黄埔街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp13">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>文冲街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp14">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>红山街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp15">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>穗东街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp16">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>南岗街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hp17">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>夏港街道</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="street_HuaDu" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>327</y>
+       <width>98</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="hd1">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>梯面镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hd2">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>赤坭镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hd3">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>狮岭镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hd4">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>花山镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hd5">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>花东镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hd6">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>花城街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hd7">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>秀全街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hd8">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>炭步镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hd9">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>新华街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hd10">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>新雅街道</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="street_ZengCheng" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>309</y>
+       <width>98</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_12">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="zc1">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>派潭镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="zc2">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>正果镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="zc3">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>小楼镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="zc4">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>中新镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="zc5">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>朱村街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="zc6">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>荔城街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="zc7">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>增江街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="zc8">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>永宁街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="zc9">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>新塘镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="zc10">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>仙村镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="zc11">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>石滩镇</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="street_CongHua" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>337</y>
+       <width>98</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_13">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="ch1">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>吕田镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ch2">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>良口镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ch3">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>温泉镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ch4">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>鳌头镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ch5">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>城郊街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ch6">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>街口街道</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ch7">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>太平镇</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ch8">
+        <property name="font">
+         <font>
+          <family>思源黑体 CN Bold</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(33, 33, 33);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>江埔街道</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <zorder>temperature_edit_2</zorder>
+    <zorder>weather_edit_2</zorder>
+    <zorder>UI_map_region_bg</zorder>
+    <zorder>count_4</zorder>
+    <zorder>count_7_edit</zorder>
+    <zorder>count_5_edit</zorder>
+    <zorder>count_4_edit</zorder>
+    <zorder>count_5</zorder>
+    <zorder>regionName_3</zorder>
+    <zorder>count_6</zorder>
+    <zorder>weather_2</zorder>
+    <zorder>count_7</zorder>
+    <zorder>riskLvl_2</zorder>
+    <zorder>temperature_2</zorder>
+    <zorder>regionName_4</zorder>
+    <zorder>count_6_edit</zorder>
+    <zorder>returnButton</zorder>
+    <zorder>fatherName_2</zorder>
+    <zorder>street_NanSha</zorder>
+    <zorder>street_PanYu</zorder>
+    <zorder>street_HaiZhu</zorder>
+    <zorder>street_LiWan</zorder>
+    <zorder>street_YueXiu</zorder>
+    <zorder>street_TianHe</zorder>
+    <zorder>street_BaiYun</zorder>
+    <zorder>street_HuangPu</zorder>
+    <zorder>street_HuaDu</zorder>
+    <zorder>street_ZengCheng</zorder>
+    <zorder>street_CongHua</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
